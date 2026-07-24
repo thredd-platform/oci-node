@@ -16,7 +16,7 @@ jobs:
         with:
           fetch-depth: 0
       - uses: docker/setup-qemu-action@v4
-      - uses: redhat-actions/buildah-build@v2
+      - uses: redhat-actions/buildah-build@v3
         with:
           platforms: linux/amd64,linux/arm64
           image: ghcr.io/${{ github.repository }}
