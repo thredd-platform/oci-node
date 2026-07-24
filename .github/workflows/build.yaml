@@ -24,7 +24,7 @@ jobs:
           containerfiles: |
             ./Containerfile
       - name: Push to GitHub Container Registry
-        uses: redhat-actions/push-to-registry@v2
+        uses: redhat-actions/push-to-registry@v3
         with:
           image: ghcr.io/${{ github.repository }}
           tags: latest
