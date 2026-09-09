@@ -1,7 +1,7 @@
 FROM docker.io/debian:13 AS build
 
 ARG TARGETARCH
-ARG NODE_VERSION=24.18.0
+ARG NODE_VERSION=24.21.0
 
 RUN apt-get update && apt-get install -y curl ca-certificates tar gzip
 
